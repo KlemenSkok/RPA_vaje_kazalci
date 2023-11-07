@@ -13,11 +13,11 @@ int main() {
     char niz2[5], *p2 = niz2;
     fgets(niz, n, stdin);
     fgets(niz2, 5, stdin);
-    
+// nardis plac za 4 znake
     for(int i = 0; i < 4; i++)
         for(int j = n-1; j >= 5; j--)
             *(p1 + j) = *(p1 + j-1);
-    
+// prlimas 4 znake
     for(int i = 4; i < 8; i++) {
         *(p1 + i) = *(p2 + i%4);
     }
