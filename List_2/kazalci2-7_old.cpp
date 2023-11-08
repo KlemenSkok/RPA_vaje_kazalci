@@ -15,7 +15,6 @@ struct Racun {
 };
 
 void napolni(struct Racun *ptr) {
-    srand(time(NULL));
     const char names[][10] = {"Janez", "Polda", "Micka"};
     const char surnames[][10] = {"Novak", "Medved", "Zajc"};
 
@@ -50,6 +49,7 @@ float stanje(struct Racun racun) {
 
 int main() {
 
+    srand(time(NULL));
     struct Racun racun, *ptr;
     ptr = &racun;
 
@@ -58,6 +58,6 @@ int main() {
     cout << "------------------------------\n\nTrenutno stanje: " << stanje(racun) << endl;
 
 
-    system("pause");
+    //system("pause");
     return 0;
 }
